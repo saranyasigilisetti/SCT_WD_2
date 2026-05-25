@@ -1,0 +1,118 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(135deg,#0f172a,#1e293b,#334155);
+  color:white;
+}
+
+/* Main Container */
+
+.container{
+  width:420px;
+  padding:30px;
+  border-radius:25px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+  text-align:center;
+}
+
+h1{
+  margin-bottom:25px;
+  font-size:35px;
+  color:#00d4ff;
+  letter-spacing:3px;
+}
+
+/* Circle Timer */
+
+.circle{
+  width:280px;
+  height:280px;
+  border-radius:50%;
+  border:8px solid #00d4ff;
+  margin:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:rgba(255,255,255,0.05);
+  box-shadow:
+  0 0 20px #00d4ff,
+  0 0 40px rgba(0,212,255,0.3);
+}
+
+.time{
+  font-size:45px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+/* Buttons */
+
+.buttons{
+  margin-top:30px;
+}
+
+button{
+  padding:12px 18px;
+  margin:8px;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+  font-size:16px;
+  font-weight:bold;
+  color:white;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.08);
+}
+
+.start{
+  background:#22c55e;
+}
+
+.pause{
+  background:#facc15;
+  color:black;
+}
+
+.reset{
+  background:#ef4444;
+}
+
+.lap{
+  background:#3b82f6;
+}
+
+/* Lap Section */
+
+.laps{
+  margin-top:25px;
+  max-height:180px;
+  overflow-y:auto;
+  text-align:left;
+}
+
+.laps li{
+  list-style:none;
+  background:rgba(255,255,255,0.1);
+  padding:10px;
+  margin:8px 0;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.laps li:hover{
+  background:rgba(255,255,255,0.2);
+}
